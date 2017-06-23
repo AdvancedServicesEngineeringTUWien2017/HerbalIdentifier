@@ -1,5 +1,5 @@
 # README
-This project contains a mini project for Advanced Services Engineering at the Technical university of vienna
+This project contains a mini project for Advanced Services Engineering at the Technical University of Vienna and should provide an image classification service as well as a manual classification service and retraining the network via a Hadoop Spark computing engine.
 
 # basic description
 
@@ -35,11 +35,12 @@ Start the Docker image:
 	cd ~
 	./startdocker.sh
 
-##Classify Service Deploy
+## Classify Service Deploy
 
 Copy the classify folder into the root/ directory
 
 Build and Start the Docker image:
+
 	cd ~/classify
 	./buildimage.sh
 	./startdocker.sh
@@ -53,6 +54,8 @@ If your SparkMaster server is already running and all the scp commands in the ap
 - No SSL encryption
 - Not finished
 - just a Prototype
+
+The Project uses [Tensorflow] and [tensoronspark].
 
 [Tensorflow]: https://github.com/tensorflow/tensorflow/tree/master/tensorflow/tools/docker
 [tensoronspark]: https://github.com/liangfengsid/tensoronspark
